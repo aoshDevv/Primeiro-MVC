@@ -18,8 +18,23 @@ namespace SalesWebMvc.Controllers
             return View();
         }
 
+        public IActionResult Contact()
+        {
+            ViewData["Message"] = "Your contact page";
+            ViewData["email"] = "vitoxdantas@gmail.com";
+            return View();
+        }
+
         public IActionResult Privacy()
         {
+            return View();
+        }
+
+        public IActionResult About()
+        {
+            ViewData["Message"] = "My first ASP.NET Core MVC Project";
+            ViewData["Study"] = "João Vitor F. D.";
+
             return View();
         }
 
